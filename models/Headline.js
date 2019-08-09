@@ -27,7 +27,6 @@ url: {
   // date is just a string
 date: {
   type: String
-  
 },
   // saved, boolean default false
   saved: {
