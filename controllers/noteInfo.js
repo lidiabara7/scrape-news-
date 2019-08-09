@@ -4,7 +4,7 @@ module.exports = {
     // find one
     find: function(req, res){
         db.Note.find({_headlineId: req.prams.id})
-        .then(function(dbNotes){
+        .then(function(dbNote){
             res.json(dbNote);
 
         });

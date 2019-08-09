@@ -1,5 +1,5 @@
 var router = require("express").Router();
-var noteController = require("../../controllers/noteInfo");
+var noteController = require("../../controllers/note");
 
 router.get("/:id", noteController.find);
 router.post("/", noteController.create);

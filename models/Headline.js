@@ -1,3 +1,6 @@
+// Headline model
+// ==============
+
 // Require mongoose
 var mongoose = require("mongoose");
 
@@ -9,26 +12,27 @@ var headlineSchema = new Schema({
   // headline, a string, must be entered
 headline: {
   type: String,
-  required: true
+  require:true
 },
   // summary, a string, must be entered
-summary:{
-  type: String
+summary: {
+  type: String,
+  require: true
 },
   // url, a string, must be entered
 url: {
   type: String,
-  required: true
+  require: true
 },
   // date is just a string
 date: {
-type: String,
-default: Date.now
-
+  type: String
+  
 },
   // saved, boolean default false
   saved: {
-    default:false
+    type: Boolean,
+    default: false
   }
 });
 

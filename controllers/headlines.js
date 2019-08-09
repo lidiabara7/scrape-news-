@@ -6,7 +6,7 @@ module.exports = {
         db.Headline
         .find(req.query)
         .sort({ data: -1})
-        .then(function(dbHeadlien){
+        .then(function(dbHeadline){
             res.json(dbHeadline);
         });
     },

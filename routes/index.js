@@ -1,8 +1,8 @@
 var router = require("express").Router();
-var noteController = require("../controllers/noteInfo");
+var apiRoutes = require("./api");
+var viewRoutes = require("./view");
 
-router.get("/:id", noteController.find);
-router.post("/", noteController.create);
-router.delete("/:id", noteController.delete);
+router.use("/api", apiRoutes);
+router.use("/", viewRoutes);
 
 module.exports = router;
